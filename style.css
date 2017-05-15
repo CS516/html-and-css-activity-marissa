@@ -1,25 +1,51 @@
+@import url('layout.css');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Comfortaa|Montserrat');
+
+/*
+  Light Teal: #ccfff5;
+  Blue Gray: #2d5986;
+  Purple: #9900cc;
+
+  Link Blue: #0099ff;
+  Light Blue: #e6f5ff;
+ */
+
+*, html {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* HTML5 Block Elements */
+article, aside, details, footer, header, hgroup, menu, nav, section {
+	display: block;
+	margin: 8px;
+	padding: 8px;
+}
 
 body {
 	background-color: #ccfff5;
     font-family: 'Montserrat', sans-serif;
-	margin: 20px;
-}
-
-article {
-	display: block;
-	background-color: white;
-	border-radius: 20px;
-	padding: 20px;
-	margin-bottom: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Comfortaa', cursive;
 }
 
-h2, header > h3 {
+article > h2 {
 	text-align: center;
+}
+
+section, article {
+	background-color: white;
+	border-radius: 20px;
+	padding: 30px 20px 20px 20px;
+	margin-bottom: 15px;
+}
+
+article {
+	margin-top: 20px;
+	margin-right: 15px;
 }
 
 p, li {
@@ -35,20 +61,15 @@ a {
 	color: #0099ff;
 }
 
-ul.image-grid {
+/* Favorite Animal Image Grid */
+.image-grid {
 	padding-left: 0px;
+	list-style-type: none;
 }
 
 .image-grid > li {
-	list-style-type: none;
 	margin: 20px;
-	display: inline;
-}
-
-.image-grid figure {
 	display: inline-block;
-	height: 20px;
-	margin: 0px;
 }
 
 .image-grid img {
@@ -64,14 +85,10 @@ pre {
 	background-color: #e6f5ff;
 	border: 2px solid gray;
 	border-radius: 5px;
-	padding: 20px;
 	margin: auto;
+	padding: 8px;
 	width: 50%;
-	overflow: scroll;
-}
-
-table {
-	margin-left: 20px;
+	overflow: auto;
 }
 
 thead {
@@ -80,16 +97,12 @@ thead {
 	color: white;
 }
 
-tbody {
-	background-color: white;
-}
-
 table, tr, td, th {
 	border: 2px solid gray;
 	border-collapse: collapse;
 	padding: 10px;
 }
 
-body > footer {
+footer {
 	text-align: right;
 }
