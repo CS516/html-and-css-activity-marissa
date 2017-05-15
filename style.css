@@ -1,8 +1,95 @@
-@font-face {
-    font-family: Montserrat;
-    src: url('https://fonts.googleapis.com/css?family=Montserrat');
-}
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Comfortaa|Montserrat');
 
 body {
-  font-family: Montserrat, sans-serif;
+	background-color: #ccfff5;
+    font-family: 'Montserrat', sans-serif;
+	margin: 20px;
+}
+
+article {
+	display: block;
+	background-color: white;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+}
+
+h2, header > h3 {
+	text-align: center;
+}
+
+p, li {
+	color: #2d5986; 
+}
+
+em {
+	color: #9900cc;
+}
+
+a {
+	text-decoration: none;
+	color: #0099ff;
+}
+
+ul.image-grid {
+	padding-left: 0px;
+}
+
+.image-grid > li {
+	list-style-type: none;
+	margin: 20px;
+	display: inline;
+}
+
+.image-grid figure {
+	display: inline-block;
+	height: 20px;
+	margin: 0px;
+}
+
+.image-grid img {
+	border-radius: 15px;
+	height: 200px;
+}
+
+.image-grid img:hover {
+	opacity: 0.5;
+}
+
+pre {
+	background-color: #e6f5ff;
+	border: 2px solid gray;
+	border-radius: 5px;
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	overflow: scroll;
+}
+
+table {
+	margin-left: 20px;
+}
+
+thead {
+	background-color: lightgray;
+	text-shadow: 1px 1px 0 #444; 
+	color: white;
+}
+
+tbody {
+	background-color: white;
+}
+
+table, tr, td, th {
+	border: 2px solid gray;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+body > footer {
+	text-align: right;
 }
