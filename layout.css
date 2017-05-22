@@ -20,13 +20,14 @@
 	list-style-type: none;
 }
 
-#sidenav ul > li {
+#sidenav ul > li > a {
 	padding: 10px;
 	margin-bottom: 5px;
 	text-align: right;
 	background-color: white;
 	border: 1px solid lightgray;
 	font-size: .75em;
+  display: block;
 }
 
 /* Responsive Layout */
